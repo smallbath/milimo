@@ -14,44 +14,33 @@
 </head>
 
 <body>
-
-    <div class="fixed-contact-section" id="fixedContact">
-        <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="16" y1="13" x2="8" y2="13"></line>
-                <line x1="16" y1="17" x2="8" y2="17"></line>
-            </svg>
+<div class="fixed-contact-section" id="fixedContact">
+        <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="fixed-contact-link">
+            my resume
         </a>
-        <a href="mailto:mr.mukkuli@gmail.com" aria-label="Email">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
+        <a href="mailto:mr.mukkuli@gmail.com" class="fixed-contact-link">
+            mr.mukkuli@gmail.com
         </a>
-        <a href="https://github.com/smallbath" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                </path>
-            </svg>
-        </a>
-        <a href="#" data-placeholder="add-linkedin-url" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-        </a>
+        <div class="fixed-contact-icons">
+            <a href="https://github.com/smallbath" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                </svg>
+            </a>
+            <a href="#" data-placeholder="add-linkedin-url" aria-label="LinkedIn">
+                <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+        </div>
     </div>
-
-    <main class="main-content">
-
+<main class="main-content">
         <section class="section hero-section" id="home" data-testid="section-home">
             <div class="hero-content">
                 <h1 class="hero-title" data-testid="text-hero-title">
@@ -70,9 +59,7 @@
             <div class="container-narrow">
                 <h2 class="section-title centered" data-testid="text-work-title">Featured Projects</h2>
 
-                <div class="projects-list">
-
-                    <article class="project-item" data-testid="project-item-2">
+                <div class="projects-list"><article class="project-item" data-testid="project-item-2">
                         <div class="project-image">
                             <div class="project-image-wrapper">
                                 <img src="assets/images/yamba-static.png" alt="Yamba Media Website"
@@ -97,6 +84,7 @@
                                 <li>Formspree</li>
                             </ul>
                             <div class="project-links">
+                                <!-- 
                                 <a href="https://github.com/smallbath/yambamedia" target="_blank"
                                     rel="noopener noreferrer" aria-label="GitHub Repository"
                                     data-testid="link-github-2">
@@ -107,8 +95,8 @@
                                         </path>
                                     </svg>
                                 </a>
-                                <a href="https://smallbath.github.io/yambamedia/" target="_blank"
-                                    rel="noopener noreferrer" aria-label="Live Demo" data-testid="link-demo-2">
+                                <a href="https://smallbath.github.io/yambamedia/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Live Demo" data-testid="link-demo-2">
                                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -119,8 +107,7 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="project-item reverse" data-testid="project-item-1">
+<article class="project-item reverse" data-testid="project-item-1">
                         <div class="project-image">
                             <div class="project-image-wrapper">
                                 <img src="assets/images/invoice-static.png" alt="Invoice Generator"
@@ -153,7 +140,7 @@
                                             d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
                                         </path>
                                     </svg>
-                                </a>
+                                </a> 
                                 <a href="https://smallbath.github.io/invoiceGenerator2/" target="_blank"
                                     rel="noopener noreferrer" aria-label="Live Demo" data-testid="link-demo-1">
                                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -166,8 +153,7 @@
                             </div>
                         </div>
                     </article>
-
-                    <article class="project-item" data-testid="project-item-5">
+<article class="project-item" data-testid="project-item-5">
                         <div class="project-image">
                             <div class="project-image-wrapper">
                                 <img src="assets/images/photo-static.png" alt="Photo Portfolio Site"
@@ -180,14 +166,13 @@
                             <p class="project-overline">Featured Project</p>
                             <h3 class="project-title">Photo Portfolio Site</h3>
                             <div class="project-description-card">
-                                <p>A photography portfolio built around a horizontally-scrolling project gallery.
-                                    Hovering a project cycles the images.</p>
+                                <p>A photography portfolio of a passionate visual storyteller. A series of photography
+                                    projects and contact service.</p>
                             </div>
                             <ul class="project-tech-list">
                                 <li>HTML5</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
-                                <li>GSAP</li>
                             </ul>
                             <div class="project-links">
                                 <a href="https://github.com/smallbath/photoPortfolio" target="_blank"
@@ -244,101 +229,85 @@
 
         <section class="section about-section" id="about" data-testid="section-about">
             <div class="container">
-                <h2 class="section-title centered" data-testid="text-about-title">About</h2>
+                <h2 class="section-title centered" data-testid="text-about-title">About Me</h2>
+                <div class="about-content">
+                    <p class="large-text">
+                        I build websites and web applications. I enjoy creating tools that solve real problems and are
+                        easy for people to use.
+                    </p>
+                    <p>
+                        My projects include business applications, content management systems, and portfolio sites. Each
+                        one focuses on clean design and smooth functionality.
+                    </p>
+                    <p>
+                        Outside of code, I do graphic design and illustration in Affinity, and I'm
+                        learning small-scale animation for brand intros and reels.
+                    </p>
 
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p class="large-text">
-                            I build websites and web apps. Right now I'm focused on frontend work and
-                            learning how to ship things people actually use.
-                        </p>
-                        <p>
-                            I've built client sites, small business tools, and portfolio layouts.
-                            Currently learning React and working toward AWS certification.
-                        </p>
-                        <p>
-                            Outside of code, I do graphic design and illustration in Affinity, and
-                            I'm learning small-scale animation for brand intros and reels.
-                        </p>
-                    </div>
-
-                    <div class="about-skills">
-                        <div class="skill-category">
-                            <h4>Languages</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">SQL</span>
+                    <div class="skills-section">
+                        <h3>Skills & Technologies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Languages</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">SQL</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Frontend</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">GSAP</span>
-                                <span class="skill-tag">Responsive design</span>
+                            <div class="skill-category">
+                                <h4>Frontend</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">GSAP</span>
+                                    <span class="skill-tag">Responsive design</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Tools</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">GitHub</span>
-                                <span class="skill-tag">Netlify</span>
-                                <span class="skill-tag">VS Code</span>
-                                <span class="skill-tag">Linux</span>
+                            <div class="skill-category">
+                                <h4>Tools</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">GitHub</span>
+                                    <span class="skill-tag">Netlify</span>
+                                    <span class="skill-tag">VS Code</span>
+                                    <span class="skill-tag">Linux</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
 
-        <section class="contact-footer" id="contact" data-testid="section-contact">
-            <div class="contact-container">
-                <h2 class="contact-title" data-testid="text-contact-title">Get In Touch</h2>
-                <p class="contact-text">
-                    Email works best. I reply within a day or two.
-                </p>
-                <div class="contact-icons">
-                    <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                        </svg>
-                    </a>
-                    <a href="mailto:mr.mukkuli@gmail.com" aria-label="Email">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/smallbath" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="#" data-placeholder="add-linkedin-url" aria-label="LinkedIn">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                </div>
-                <p class="footer-credit">Designed &amp; Built by Milimo Mukkuli</p>
+        <section class="section contact-section" id="contact" data-testid="section-contact">
+            <div class="container">
+                <h2 class="section-title centered" data-testid="text-contact-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-text">
+                        I'm open to discussing new opportunities and collaboration. Feel free to reach out!
+                    </p>
+                    <div class="contact-info-section">
+                        <a href="assets/resume/resume.pdf" class="contact-info-link">resume</a>
+                        <a href="mailto:mr.mukkuli@gmail.com" class="contact-info-link">mr.mukkuli@gmail.com</a>
+                        <div class="contact-info-icons">
+                            <a href="https://github.com/smallbath" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <p class="footer-credit">Designed & Built by Milimo Mukkuli</p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
