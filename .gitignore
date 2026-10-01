@@ -1,0 +1,6 @@
+
+# Local backups
+*.old
+*.bak
+*.bak[0-9]*
+*.pre-*
